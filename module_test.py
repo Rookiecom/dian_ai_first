@@ -10,13 +10,13 @@ from nn.function import *
 import nn
 
 
-def parse_args():
+def parse_args():#增加命令行解析功能
     parser = argparse.ArgumentParser()
     parser.add_argument('tests', nargs='*')
     return parser.parse_args()
 
 
-def randnint(n, a=8, b=16):
+def randnint(n, a=8, b=16):#返回指向n个从a到b的随机数的指针
     """Return N random integers."""
     return (random.randint(a, b) for _ in range(n))
 
